@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:contentInsetStartWithNavigation="?attr/actionBarSize"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    tools:targetApi="lollipop">
+
+</androidx.appcompat.widget.Toolbar>
+
+    <!--在AndroidManifest.xml中通过属性android:theme="@style/AppTheme"指定APP的主题,
+    其对应styles.xml中的<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">,
+    该主题为淡色主题, 因此Toolbar此时也是淡色主题.
+    为了和主题颜色区分开, Toolbar上的各种元素就会自动使用深色系.
+    如果想要Toolbar像原来的ActionBar一样, 文字等元素都是白色的, 就需要将Toolbar设置为深色主题,
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"属性可以达到这个目的.-->
+
+    <!--Toolbar指定为深色主题后, 又会出现一种新的现象.
+    如果Toolbar中有菜单, 那么此时弹出的菜单项也会是深色主题,
+    这样又会变得很难看.
+    这时我们可使用属性app:popupTheme="@style/ThemeOverlay.AppCompat.Light"来将弹出菜单设置为淡色主题.-->
+
+    <!--属性app:contentInsetStartWithNavigation="?attr/actionBarSize"可以解决
+    Toolbar的NavigationIcon和Title间距离过长的问题-->

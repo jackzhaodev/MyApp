@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--&lt;!&ndash; 背景颜色 &ndash;&gt;-->
+    <!--<item android:drawable="@color/white" />-->
+
+    <!--<item>-->
+    <!--&lt;!&ndash; 图片. 这张图可以张全屏的图, 也可以是张小图. 如果是张全屏的图, 那么上面的背景颜色就可以不用设置; 如果是张小图, 那么就需要设置一个背景色, 并可以指定图片所在位置 &ndash;&gt;-->
+    <!--<bitmap-->
+    <!--android:gravity="center"-->
+    <!--android:src="@drawable/wel_page" />-->
+    <!--</item>-->
+
+    <item>
+        <bitmap android:src="@drawable/splash_bg" />
+    </item>
+</layer-list>

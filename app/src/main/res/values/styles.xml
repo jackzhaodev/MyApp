@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--Activity切换动画-->
+        <item name="android:windowAnimationStyle">@style/activity_slide_in_out_anim_style</item>
+        <!--统一设置Window的背景色-->
+        <item name="android:windowBackground">@color/windowBackground</item>
+    </style>
+
+    <!--Activity切换动画-->
+    <style name="activity_slide_in_out_anim_style" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/right_slide_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/left_slide_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/left_slide_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/right_slide_out</item>
+    </style>
+
+    <!--自定义加载框的Style-->
+    <style name="MyLoadingDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--闪屏页Theme-->
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <!--控件水波纹效果, 适用于控件没有设置background的情形. 向下兼容, API21以下也可以使用, 点击会变色, 但不会有水波纹效果.-->
+    <!--一些控件需要手动设置以下两项属性才能实现该效果, 如TextView, RelativeLayout等控件.
+    <item name="android:clickable">true</item>
+    <item name="android:focusable">true</item>-->
+    <style name="RippleEffect">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!--PopupWindow的显示与消失动画Style, 从底部升起, 向底部消失-->
+    <style name="popupWindowAnimStyleFromBottom">
+        <item name="android:windowEnterAnimation">@anim/window_up_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/window_down_to_bottom</item>
+    </style>
+</resources>
