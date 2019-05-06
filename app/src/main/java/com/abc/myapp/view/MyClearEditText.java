@@ -110,7 +110,7 @@ public class MyClearEditText extends AppCompatEditText implements TextWatcher {
 
         // 如果mDrawable为null, 说明xml中没有设置drawableEnd, 则使用R.drawable.clear这张图片
         if (mDrawable == null) {
-            mDrawable = ContextCompat.getDrawable(mContext, R.drawable.icon_clear);
+            mDrawable = ContextCompat.getDrawable(mContext, R.drawable.ic_clear);
         }
 
         if (mDrawable == null) {

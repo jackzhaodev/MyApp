@@ -73,7 +73,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                 actionBar.setTitle(title);
             }
             // 设置导航栏图标
-            toolbar.setNavigationIcon(R.drawable.back);
+            toolbar.setNavigationIcon(R.drawable.ic_back);
             // 设置导航栏图标的点击事件
             toolbar.setNavigationOnClickListener(new View.OnClickListener() {
                 @Override

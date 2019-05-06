@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_above="@id/tv_loading_tips"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/icon_loading_tips" />
+            android:src="@drawable/ic_loading_tips" />
 
         <TextView
             android:id="@+id/tv_loading_tips"
