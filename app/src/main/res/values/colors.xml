@@ -3,8 +3,8 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <!--白烟-->
-    <color name="whiteSmoke">#f5f5f5</color>
+    <!--常用的Window背景色-->
+    <color name="windowBackground">#eeeeee</color>
     <!--Color.java中的public static final int 颜色值-->
     <color name="black">#000000</color>
     <color name="dkGray">#444444</color>
@@ -17,5 +17,4 @@
     <color name="yellow">#FFFF00</color>
     <color name="cyan">#00FFFF</color>
     <color name="magenta">#FF00FF</color>
-    <color name="windowBackground">#eeeeee</color>
 </resources>
