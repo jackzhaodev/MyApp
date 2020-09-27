@@ -333,4 +333,20 @@ public class StatusBarUtils {
             window.setNavigationBarColor(color);
         }
     }
+    
+    /**
+     * 修改状态栏字体颜色
+     */
+    public static void setStateBarTextColor(boolean dark) {
+        View decor = getWindow().getDecorView();
+        if (dark) {
+            // 设为黑色字体
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                decor.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+            }
+        } else {
+            // 设为白色字体
+            decor.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+        }
+    }
 }
